@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseño.css">
+    <link rel="icon" href="/imagenes/game_21494.png">
+    <title>Preguntados</title>
+</head>
+<body>
+    <header class="Barra">
+
+      <h1 class="brillo">¡Bienvenido a esta desafiante oportunidad <span id="nombreParticipante"></span>!</h1>
+
+        <img class="logo" src="./imagenes/LogoChallengers.svg" alt="logoCuestionario">
+    </header>
+
+    <aside class="tiempoPantalla" id="cronometro"><span id="minutes">01</span>:<span id="seconds">00</span></aside>
+
+
+    <section class="borde-image">
+        <section class="seccion1">
+            <h2>Reglas:</h2>
+
+            <p><strong>A continuacion se le planteará una serie de preguntas que deberá contestar en un plazo de 1 minuto, probando así tus conocimientos y tus habilidades con el teclado.</strong></p>
+            <section class="seccion2">
+
+                <div class="pregunta">
+
+                    <h3>Pregunta #1</h3>
+
+                    <label for="pregunta1">¿Qué se celebra el 5 de Julio?</label> <br>
+
+                    <input class="input" required type="text" id="pregunta1">
+                </div>
+                <div class="pregunta">
+
+                    <h3>Pregunta #2</h3>
+                    <label for="pregunta1">¿Qué color sale de la fusion Azul y Amarillo?</label> <br>
+
+                    <input class="input" required type="text" id="pregunta2">
+
+                </div>
+                <div class="pregunta">
+
+                    <h3>Pregunta #3</h3>
+
+                    <label for="pregunta1">¿Cúal es la capital del estado Amazonas?</label> <br>
+
+                    <input class="input" required type="text" id="pregunta3">
+                </div>
+                <div class="pregunta">
+
+                    <h3>Pregunta #4</h3>
+
+                    <label for="pregunta1">¿Qué se celebra el 24 de Julio?</label> <br>
+
+                    <input class="input" required type="text" id="pregunta4">
+                </div>
+                <div class="pregunta">
+
+                    <h3>Pregunta #5</h3>
+
+                    <label for="pregunta1">Cómo se llamaba el perro de Simón Bolívar?</label> <br>
+
+                    <input class="input" required type="text" id="pregunta5">
+                </div>
+                <div class="pregunta">
+
+                    <h3>Pregunta #6</h3>
+
+                    <label for="pregunta1">Más vale Diablo conocido que...</label> <br>
+                    
+                    <select class="input" required name="pregunta6" id="pregunta6">
+                        <option value="">Seleccione la opción Correcta</option>
+                        <option value="Diablo alborotado">Diablo alborotado</option>
+                        <option value="Diablo por coger">Diablo por coger</option>
+                        <option value="Diablo de Sabana">Diablo de Sabana</option>
+                        <option value="Diablo por conocer">Diablo por conocer</option>
+                    </select>
+                </div>
+                <div class="container">
+                    <button class="botonReinicio" id="botonReintentar">Volver a intentar</button>
+
+                    <button class="botonEnvio" id="botonFormulario" onclick="deshabilitarInputs()">Enviar</button>
+
+                    <audio id="audioFinal">
+                        <source src="/sonidos/pacman-dies.mp3" type="audio/mpeg">
+                        Sonido Inhabilitado
+                    </audio>
+                </div>
+            </section>
+        </section>
+    </section>
+    <script src="logica.js"></script>
+</body>
+</html>

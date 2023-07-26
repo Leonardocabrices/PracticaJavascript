@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    font-family: helvetica;
+    padding: 0;
+    margin: 0;
+}
+
+.Barra{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: crimson;
+    border: 3px solid black;
+    display:flex;
+    flex-direction: row;
+}
+.brillo{
+    width: 50%;
+    height: auto;
+    margin: 5px auto;
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    border: 3px solid #fff;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 0px 0px 10px #fff;
+    animation: brillo 2s infinite;
+    background-color:black ;
+}
+@keyframes brillo {
+  0% {
+    border-color: #fff;
+    text-shadow: 0px 0px 10px #fff;
+  }
+  50% {
+    border-color: #f9f28c;
+    text-shadow: 0px 0px 20px #f9f28c;
+  }
+  100% {
+    border-color: #fff;
+    text-shadow: 0px 0px 10px #fff;
+  }
+}
+
+.logo{
+    width: 30%;
+    height: 100px;
+    float: right;
+    margin: 10px auto;
+    border-radius: 80%;
+    background-color: yellow;
+    border: 3px solid black;
+
+}
+body{
+    background: url(/imagenes/telon-rojo-teatro-cortina-escena-opera_107791-1552.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+#nombreParticipante{
+  font-size: 25px;
+  color: #fff;
+}
+
+.tiempoPantalla{
+font-size: 40px;
+margin: 10px auto;
+color: red;
+text-shadow: 3px 3px 3px black;
+border: 3px solid gray;
+width: 45%;
+height: auto;
+text-align: center;
+background-color: black;
+padding: 10px;
+}
+
+.borde-image{
+  border: 5px solid black;
+  width: 50%;
+  height: auto;
+  margin: 10px auto;
+  background: url(/imagenes/madreRoble.webp) no-repeat;
+  background-size: cover;
+}
+.seccion1{
+  margin: 30px auto;
+  width: 90%;
+  height: auto;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  border: 5px solid black;
+  background: url(/imagenes/pizarra.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  text-align: justify;
+}
+.seccion1>h2{
+  text-decoration: underline ;
+  margin: 10px;
+}
+.seccion2{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+label{
+  text-decoration: underline;
+  margin: 5px;
+}
+
+.pregunta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+}
+.pregunta>input{
+  width: 60%;
+  border: 1px solid black;
+}
+
+.container{
+  display: flex;
+}
+.botonEnvio{
+  width: 25%;
+  justify-content: flex-start;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  border: 3px solid;
+}
+.botonReinicio{
+  width: 25%;
+  justify-content: flex-end;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-top: 15px;
+  border: 3px solid;
+}
